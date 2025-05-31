@@ -1,6 +1,8 @@
 package uap.mains; // package untuk mains
 
 import java.util.Scanner; // untuk membaca input dari user
+
+import uap.bases.Shape;
 import uap.models.Torus; // import kelas Torus
 import uap.models.Sphere; // import kelas Sphere
 
@@ -22,7 +24,7 @@ public class KalkulatorPabrik { // kelas main bernama KalkulatorPabrik
         System.out.print("Isikan radius   : ");
         double minorRadius = rawr.nextDouble(); // input jari-jari kecil atau radius
         System.out.println("=============================================");
-        Torus torus = new Torus(majorRadius, minorRadius); // membuat objek torus
+        Shape torus = new Torus(majorRadius, minorRadius); // membuat objek torus
         torus.printInfo(); // mencetak info
         System.out.println("=============================================");
 
@@ -32,7 +34,7 @@ public class KalkulatorPabrik { // kelas main bernama KalkulatorPabrik
         System.out.print("Isikan radius   : ");
         double radius = rawr.nextDouble(); // input jari-jari bola
         System.out.println("=============================================");
-        Sphere sphere = new Sphere(radius); // membuat objek bola
+        Shape sphere = new Sphere(radius); // membuat objek bola
         sphere.printInfo(); // mencetak informasi bola
         System.out.println("=============================================");
 
